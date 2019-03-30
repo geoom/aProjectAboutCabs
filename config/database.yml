@@ -1,0 +1,13 @@
+# specify which database and adapter to use for which environment
+
+development:
+  adapter: postgresql
+  database: cabs-app-development
+
+test:
+  adapter: postgresql
+  database: cabs-app-test
+
+production:
+  adapter: postgresql
+  database: cabs-app-production
