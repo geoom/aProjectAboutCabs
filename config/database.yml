@@ -2,12 +2,21 @@
 
 development:
   adapter: postgresql
+  encoding: utf-8
   database: cabs-app-development
+  pool: 2
+  username: geoom
+  password: 
 
 test:
   adapter: postgresql
+  encoding: utf-8
   database: cabs-app-test
 
 production:
   adapter: postgresql
+  encoding: utf-8
   database: cabs-app-production
+  pool: 2
+  username: whatever
+  password: whatever

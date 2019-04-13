@@ -1,7 +1,10 @@
 require "bundler"
 Bundler.require
 
+require 'sinatra/activerecord'
 require "sinatra/activerecord/rake"
+# require "./app"
+
 
 namespace :sanitation do
   desc "Check line lengths & whitespace with Cane"

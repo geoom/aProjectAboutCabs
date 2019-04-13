@@ -1,0 +1,27 @@
+<html>
+  <head>
+    <title>Cabs app</title>
+  </head>
+  <body>
+    <h1>Todos</h1>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Placa</th>
+          <th>Puntaje (min:1, max:5) </th>
+          <th colspan="3"></th>
+        </tr>
+      </thead>
+      <tbody>
+        <% @cabs.each do  |cab| %>
+          <tr>
+            <td><%= cab.lincense_plate %></td>
+            <td><%= cab.score %></td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+
+  </body>
+</html> 

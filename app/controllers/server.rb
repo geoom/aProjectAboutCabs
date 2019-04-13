@@ -7,5 +7,10 @@ module CabsApp
         get '/' do
             erb :index
         end
+
+        get '/cabs' do
+            @cabs = Cab.all
+            erb :cabs_list
+        end
     end
   end
