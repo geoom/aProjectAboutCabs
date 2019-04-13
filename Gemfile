@@ -16,3 +16,5 @@ group :development, :test do
   gem 'rack-test'
   gem 'rake'
 end
+
+gem "better_errors", "~> 2.5", :group => :development

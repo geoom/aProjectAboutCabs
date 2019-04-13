@@ -16,6 +16,10 @@ GEM
       public_suffix (>= 2.0.2, < 4.0)
     arel (9.0.0)
     backports (3.11.4)
+    better_errors (2.5.1)
+      coderay (>= 1.0.0)
+      erubi (>= 1.0.0)
+      rack (>= 0.9.0)
     bond (0.5.1)
     capybara (3.16.0)
       addressable
@@ -25,8 +29,10 @@ GEM
       rack-test (>= 0.6.3)
       regexp_parser (~> 1.2)
       xpath (~> 3.2)
+    coderay (1.1.2)
     concurrent-ruby (1.1.5)
     diff-lcs (1.3)
+    erubi (1.8.0)
     i18n (1.6.0)
       concurrent-ruby (~> 1.0)
     launchy (2.4.3)
@@ -102,6 +108,7 @@ PLATFORMS
 
 DEPENDENCIES
   activerecord
+  better_errors (~> 2.5)
   capybara
   launchy
   pg

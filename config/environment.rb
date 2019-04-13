@@ -1,9 +1,12 @@
 # require your gems
 require 'bundler'
+require 'better_errors'
+
 Bundler.require
 
 # set the pathname for the root of the app
 require 'pathname'
+
 APP_ROOT = Pathname.new(File.expand_path('../../', __FILE__))
 
 # require the controller(s)
@@ -24,7 +27,10 @@ module CabsApp
     set :public_folder, File.join(CabsApp::Server.root, "app", "public")
     
     configure :development do
+        use BetterErrors::Middleware
         register Sinatra::Reloader
+
+        BetterErrors.application_root = File.expand_path('..', __FILE__)
     end
     
   end
